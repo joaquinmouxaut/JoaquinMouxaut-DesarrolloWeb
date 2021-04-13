@@ -1,0 +1,22 @@
+.blog {
+    h2 {
+        margin-top: 5rem;
+    }
+}
+
+.entrada-blog {
+    margin-bottom: 3rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+
+    h3 {text-align: inherit;}
+}
+
+.texto-entrada span {
+    color: $secundario;
+}

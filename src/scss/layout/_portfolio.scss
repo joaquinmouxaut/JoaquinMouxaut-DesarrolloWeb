@@ -1,0 +1,63 @@
+.portfolio {
+    background-color: $secundario;
+    margin-top: 2rem;
+    padding: 3rem;
+    
+    h2 {
+        margin-top: 1rem;
+        color: white;
+    }
+}
+
+
+.proyectos {
+    margin-bottom: 2rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    
+}
+
+.proyecto {
+    background-color: white;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+
+    h3 {padding-bottom: 2rem;}
+
+    .boton {
+        margin: 1rem 3rem;
+        width: 90%;
+    }
+}
+
+
+
+.amarillo {
+    background-color: $primario;
+    margin-bottom: 2rem;
+}
+
+.imagen-rock {
+    height: 20rem;
+    background-image: url(/build/img/imagen_vocalista.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-cafe {
+    height: 20rem;
+    background-image: url(/build/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ver-todas {
+    display: flex;
+    align-items: flex-end;
+}

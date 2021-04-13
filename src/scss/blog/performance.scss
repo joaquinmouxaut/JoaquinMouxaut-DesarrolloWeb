@@ -1,0 +1,14 @@
+.dos-columnas {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 40% auto;
+        gap: 2rem;
+    }
+
+    img {
+        @include tablet {
+            align-self: center;
+            margin-top: 2rem;
+        }
+    }
+}
