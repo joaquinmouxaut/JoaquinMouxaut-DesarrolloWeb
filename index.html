@@ -11,39 +11,77 @@
     <link href="build/css/app.css" rel="stylesheet">
 </head>
 <body>
-    <header id="inicio" class="inicio">
-        <h1 class="titulo">Joaquín Mouxaut <span>Desarrollo Web</span></h1>
-    </header>
+    <div class="video">
+        <div class="nav-bg">
+            <div class="mobil-menu">
+                <img src="/build/img/barras.svg" alt="menu responsive">
+                <nav class="navegacion-mobil">
+                    <a href="#inicio" class="boton-inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="#inicio" class="boton-inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#blog">Blog</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
-    
-    <section class="hero">
-        <div class="contenido-hero">
-            <h2>Diseño y Programación Web Freelancer</h2>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
-                Córdoba, Argentina
-            </p>
-            <a href="https://wa.me/543512429483" class="boton">Contactar</a>    
+            <nav class="navegacion-principal contenedor">
+                <a href="#inicio" class="boton-inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
         </div>
-    </section>
 
-    <main id="servicios" class="contenedor sombra servicios">
+        
+        <div class="contenedor contenido-video">
+            <div>
+                <p class="etiqueta" style="margin-left: -2rem;">&lt;html&gt;</p>
+                <p class="etiqueta" style="margin-left: -1rem;">&lt;body&gt;</p>
+                <p class="etiqueta">&lt;h1&gt;</p>
+                <h1 class="titulo">Joaquín Mouxaut</h1>
+                <p class="etiqueta">&lt;h1&gt;</p>
+            </div>
+            <div>
+                <p class="etiqueta">&lt;h2&gt;</p>
+                <h2>Desarrollo Web</h2>
+                <p class="etiqueta">&lt;h2&gt;</p>
+            </div>
+            <div class="ubicacion">
+                <div>
+                    <p class="etiqueta">&lt;svg&gt;</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg> 
+                    <p class="etiqueta">&lt;svg&gt;</p>
+                </div>  
+                <div>
+                    <p class="etiqueta">&lt;p&gt;</p>
+                    <p>Córdoba, Argentina</p>
+                    <p class="etiqueta">&lt;p&gt;</p>
+                </div>
+            </div>
+            <div>
+                <p class="etiqueta">&lt;a&gt;</p>
+                <a href="https://wa.me/543512429483" class="boton">Contactar</a>
+                <p class="etiqueta">&lt;a&gt;</p>
+            </div>
+        </div>
+
+        <video autoplay muted loop>
+            <source src="src/video/Masa terrestre.mp4" type="video/mp4">
+        </video>
+
+        <div class="barra-inversa"></div>
+    </div>
+
+    <main id="servicios" class="contenedor">
         <h2 class="titulo">Mis Servicios</h2>
 
-            <section class="servicio servicio-principal">
+        <div class="servicios">
+            <div class="servicio servicio-principal">
                 <h3>Desarrollo Web</h3>
                 <div class="iconos">  
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -54,9 +92,9 @@
                     </svg>
                 </div>
                 <p>Diseños modernos y agradables desarrollados con las mejores prácticas de programación harán que tu sitio web tenga el mejor rendimiento y tus visitas permanezcan durante más tiempo.</p>
-            </section class="servicio">
+            </div>
     
-            <section class="servicio servicio-principal">
+            <div class="servicio servicio-principal">
                 <h3>Diseños Adaptativos</h3>
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -67,12 +105,9 @@
                     </svg>
                 </div>
                 <p>Aplicamos técnicas de Responsive Web Design para garantizar que tu sitio web se visualizará de la mejor manera adaptandose a cualquier dispostivo, ya sea un smartphone, tablet, PC o TV.</p>    
-            </section>
-        
-        <p class="boton-secundario">Proximamente</p>
+            </div>
 
-        <div class="servicio-proximamente">
-            <section class="servicio">
+            <div class="servicio">
                 <h3>Tiendas Virtuales</h3>
                 <div class="iconos iconos-proximamente">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -83,10 +118,12 @@
                         <line x1="11" y1="15" x2="13" y2="15" />
                     </svg>
                 </div>
-            </section>
+                <p>Personalizamos el diseño y las funciones de la Tienda Virtual de acuerdo a tus necesidades y sin comisiones por transacción.</p>
+            </div>
 
-            <section class="servicio">
-                <h3>Aplicaciones Moviles</h3>
+            <div class="servicio">
+                <p class="boton-secundario">Proximamente</p>
+                <h3 style="margin-top: 1rem;">Aplicaciones Moviles</h3>
                 <div class="iconos iconos-proximamente">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -95,9 +132,8 @@
                         <line x1="12" y1="17" x2="12" y2="17.01" />
                     </svg>
                 </div>
-            </section>   
+            </div>
         </div>
-        
     </main>
 
     <section id="portfolio" class="portfolio">

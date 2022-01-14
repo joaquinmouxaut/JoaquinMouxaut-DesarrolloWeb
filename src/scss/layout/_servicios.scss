@@ -1,21 +1,9 @@
 .servicios {
     @include tablet {
         display: grid;
-        grid-template-columns: 35% 35% auto;
-        gap: 2rem;
+        gap: 5rem;
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-flow: dense;
-    }
-
-    h2 {
-        @include tablet {
-            grid-column: 1 / 3;
-        }
-    }
-
-    .servicio-principal {
-        @include tablet {
-            grid-row: 2 / 3;
-        }
     }
 
     .servicio-proximamente {

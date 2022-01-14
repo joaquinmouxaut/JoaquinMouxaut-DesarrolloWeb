@@ -1,0 +1,103 @@
+.video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #111;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#891c1e+0,9e37f2+65,ffffff+100&0.8+0,0.5+100 */
+    // background: -moz-linear-gradient(-45deg,  rgba(137,28,30,0.8) 0%, rgba(158,55,242,0.61) 65%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(-45deg,  rgba(137,28,30,0.8) 0%,rgba(158,55,242,0.61) 65%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(135deg,  rgba(137,28,30,0.8) 0%,rgba(158,55,242,0.61) 65%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc891c1e', endColorstr='#80ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+}
+
+.mostrar {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.contenido-video {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s ease-in-out, opacity 3s ease-in-out;
+
+    h2 {
+        padding-top: 0;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.barra-inversa {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,111111+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(17,17,17,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(17,17,17,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(17,17,17,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+}
+
+//Menu de Hamburguesa
+.mobil-menu {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    background-color: transparent;
+    transition: visibility 2s ease-in-out, opacity 3s ease-in-out, background-color 3s ease-in-out;
+
+    @include tablet {
+        display: none;
+    }
+
+    img {
+        height: 5rem;
+    }
+}
+
+.desplegar {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(17,17,17,.5);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+}
